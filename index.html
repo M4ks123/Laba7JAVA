@@ -1,0 +1,141 @@
+<!doctype html>
+<!-- The DOCTYPE declaration above will set the     -->
+<!-- browser's rendering engine into                -->
+<!-- "Standards Mode". Replacing this declaration   -->
+<!-- with a "Quirks Mode" doctype is not supported. -->
+
+<html>
+  <head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset=UTF-8>
+
+    <!--                                                               -->
+    <!-- Consider inlining CSS to reduce the number of requested files -->
+    <!--                                                               -->
+    <link type="text/css" rel="stylesheet" href="mywebapp.css">
+
+    <!--                                           -->
+    <!-- Any title is fine                         -->
+    <!--                                           -->
+    <title>Web Application Starter Project</title>
+    
+    <!--                                           -->
+    <!-- This script loads your compiled module.   -->
+    <!-- If you add any GWT meta tags, they must   -->
+    <!-- be added before this line.                -->
+    <!--                                           -->
+    <script src="mywebap/mywebap.nocache.js"></script>
+    <style>
+      .header {
+        background-color: black;
+        font-size: 29px;
+      }
+      .formPanel {
+        border: 4px solid #ccc;
+        padding: 26px;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        width: 400px; /* ширина форми */
+        margin: 0 auto; /* вирівнювання по центру */
+      }
+
+      .inputField {
+        width: 100%; /* ширина текстових полів */
+        margin-bottom: 10px; /* відступ між полів */
+      }
+
+      .submitButton {
+        width: 100%; /* ширина кнопки */
+        padding: 10px; /* внутрішній відступ кнопки */
+        background-color: #4CAF50; /* колір фону кнопки */
+        color: white; /* колір тексту */
+        border: none; /* відсутність рамки */
+        border-radius: 5px; /* закруглені кути */
+        cursor: pointer; /* зміна курсора при наведенні */
+      }
+
+      .submitButton:hover {
+        background-color: #45a049; /* зміна фону кнопки при наведенні */
+      }
+      .exchange-rates {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        background-color: #f9f9f9;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      #weatherButton {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+
+      #weatherContainer {
+
+        padding: 10px;
+        margin-top: 10px;
+      }
+      #weather {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+
+
+    </style>
+  </head>
+
+  <!--                                           -->
+  <!-- The body can have arbitrary html, or      -->
+  <!-- you can leave the body empty if you want  -->
+  <!-- to create a completely dynamic UI.        -->
+  <!--                                           -->
+  <body>
+  <div id="header">
+
+  </div>
+
+
+    <!-- RECOMMENDED if your web app will not function without JavaScript enabled -->
+    <noscript>
+      <div style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
+        Your web browser must have JavaScript enabled
+        in order for this application to display correctly.
+      </div>
+    </noscript>
+
+
+
+    <table align="center">
+      <tr>
+        <td colspan="2" style="font-weight:bold;">Please enter your data:</td>
+      </tr>
+      <tr>
+        <td id="nameFieldContainer"></td>
+        <td id="sendButtonContainer"></td>
+      </tr>
+      <tr>
+        <td colspan="2" style="color:red;" id="errorLabelContainer"></td>
+      </tr>
+    </table>
+  <div id="formContainer" class="">
+    <!-- Your GWT UI will be rendered here -->
+  </div>
+  <div id="appleet"></div>
+  <footer>
+    <div id="weather">
+      <div id="weatherButton"></div>
+      <div id="weatherContainer"></div>
+    </div>
+  </footer>
+
+  </body>
+</html>
